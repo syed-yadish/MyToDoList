@@ -32,7 +32,7 @@ public class ReadWriteTask {
      * It is the first method that is called.
      */
 
-    public static List<Object> taskRead() throws IOException {
+    public static List<Object> listRead() throws IOException {
 
         if(taskList.exists() && !taskList.isDirectory()) {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(taskList));

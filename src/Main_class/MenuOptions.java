@@ -31,10 +31,10 @@ public class MenuOptions {
     public static void taskRead() {
 
         try {
-            listToWrite = ReadWriteTask.taskRead();
+            listToWrite = ReadWriteTask.listRead();
         }
          catch(IOException e2) {
-                System.out.println("No List is available to Write");
+                System.out.println("Unable to read the list");
             }
 
         }

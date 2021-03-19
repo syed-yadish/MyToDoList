@@ -152,7 +152,7 @@ public class EditTasks {
         try {
             userInput = scan.nextLine();
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Don't get you");
         }
         return userInput;
     }
