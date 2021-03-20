@@ -6,6 +6,8 @@ import java.io.IOException;
 import Task_class.*;
 import UserInput_class.*;
 
+import UserInput_class.*;
+
 public class MenuOptions {
 
     static List<Object> listToWrite = new ArrayList<>();
@@ -61,6 +63,8 @@ public class MenuOptions {
 
     public static void selectChoice() {
 
+        UserInput addData = new UserInput(); // creating object of class U2serInput
+
         System.out.println("Choose an option 1-4");
         Scanner reader = new Scanner(System.in); //Takes user input
         int options  = reader.nextInt(); //Takes next input as int
@@ -110,7 +114,7 @@ public class MenuOptions {
                  try {
 
                 //Call method to add new tasks
-                   //  taskObject = addData.addNewTask();
+                     taskObject = addData.addNewTask();
                      listToWrite.add(taskObject);
                      // add newly created task to arrayList
                      //System.out.println("taskObject has been written to listToWrite");

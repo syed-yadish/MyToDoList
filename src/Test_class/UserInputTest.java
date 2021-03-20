@@ -5,7 +5,9 @@ import org.testng.annotations.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import UserInput_class.*;
-import java.time.LocalDate;
+
+import java.time.*;
+import java.util.Locale;
 
 
 public class UserInputTest {
@@ -15,7 +17,7 @@ public class UserInputTest {
     @Test
     public void testGiveTitle() {
         // Setup
-        final String expectedResult = "yadish";
+        final String expectedResult = "task1";
 
         // Run the test
         final String result = UserInput.giveTitle();
@@ -24,10 +26,10 @@ public class UserInputTest {
         assertEquals(expectedResult, result);
     }
 
-    
+
     @Test
     public void testGiveDueDate() {
-        // Setup
+
         final LocalDate expectedResult = LocalDate.of(2022, 1, 1);
 
         // Run the test
@@ -49,10 +51,12 @@ public class UserInputTest {
         assertEquals(expectedResult, result);
     }
 
+
+
     @Test
     public void testGiveProject() {
         // Setup
-        final String expectedResult = "bukhari";
+        final String expectedResult = "java1";
 
         // Run the test
         final String result = UserInput.giveProject();
