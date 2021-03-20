@@ -28,7 +28,7 @@ public class UserInputTest {
     @Test
     public void testGiveDueDate() {
         // Setup
-        final LocalDate expectedResult = LocalDate.of(2020, 1, 1);
+        final LocalDate expectedResult = LocalDate.of(2022, 1, 1);
 
         // Run the test
         final LocalDate result = UserInput.giveDueDate();
