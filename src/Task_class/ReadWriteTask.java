@@ -34,7 +34,9 @@ public class ReadWriteTask {
 
     public static List<Object> listRead() throws IOException {
 
-        if(taskList.exists() && !taskList.isDirectory()) {
+System.out.println("First function of listRead has been called");
+
+if(taskList.exists() && !taskList.isDirectory()) {
             ObjectInputStream ois = new ObjectInputStream(new FileInputStream(taskList));
             try {
                 input = (List<Object>) ois.readObject();
@@ -52,6 +54,8 @@ public class ReadWriteTask {
      * on how he wants to see the tasks.
      */
     public static List<Object> readListFromFile() throws IOException {
+
+System.out.println("Read List from File function has been called");
 
     System.out.println("------------------------------ ");
     System.out.println("(1) Show Entire Task List     |");

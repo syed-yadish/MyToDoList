@@ -17,6 +17,8 @@ public class EditTasks {
 
     public static List<Object> editTasksFromFile() throws IOException {
 
+System.out.println("editTaskFromFile function has been called");
+
 		//UserInput addData = new UserInput();
 		//Tasks taskObject;
         List<Object> listOfTasks = new ArrayList<>(); // List for storing objects.

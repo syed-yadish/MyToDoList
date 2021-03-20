@@ -113,6 +113,7 @@ public class MenuOptions {
                    //  taskObject = addData.addNewTask();
                      listToWrite.add(taskObject);
                      // add newly created task to arrayList
+                     //System.out.println("taskObject has been written to listToWrite");
                  }
 
                  catch (NullPointerException e){
